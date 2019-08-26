@@ -1,4 +1,4 @@
 Debug compilation: gcc -Wall -std=c18 -g ./N64Converter.c -o N64Converter
 Release compilation: gcc -Wall -std=c18 -Os -s ./N64Converter.c -o N64Converter
 
-Note that compilation on MingW might fail because of the missing byteswap.h file. If so, just copy it from somewhere into the correct place lol that works
+Note that compilation on MinGW might fail because of the missing byteswap.h file. If so, just copy it from somewhere into the correct place lol that works
