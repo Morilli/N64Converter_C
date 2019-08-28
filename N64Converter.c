@@ -15,7 +15,7 @@ int main(int argc, char** argv)
     }
 
     FILE* input = fopen(argv[1], "rb");
-    if (input == NULL) {
+    if (!input) {
         fprintf(stderr, "Error: Couldn't open input file. Make sure it exists and is accessable.\n");
         exit(EXIT_FAILURE);
     }
@@ -53,7 +53,7 @@ int main(int argc, char** argv)
     }
 
     FILE* output = fopen(argv[2], "wb");
-    if (output == NULL) {
+    if (!output) {
         fprintf(stderr, "Error: Couldn't open output file.\n");
         exit(EXIT_FAILURE);
     }
